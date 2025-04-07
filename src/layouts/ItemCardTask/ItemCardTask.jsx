@@ -3,13 +3,14 @@ import { ItemText } from '../../components/ItemText/ItemText'
 import { ItemTitle } from '../../components/ItemTitle/ItemTitle'
 import { ItemCheck } from '../../components/ItemCheck/ItemCheck'
 
-export const ItemCardTask = ({contentTitle, contentText}) => {
+export const ItemCardTask = ({ contentTitle, contentText }) => {
   return (
-    <div className='bg-white p-4 rounded-lg shadow-md  '> 
-        <ItemCheck/>
-        <ItemTitle content={contentTitle}/>
-        <ItemText content={contentText}/>
-        
+    <div className="p-6 bg-white rounded-xl shadow-lg">
+      <div className="flex items-center">
+        <ItemCheck />
+        <ItemTitle content={contentTitle} />
+      </div>
+      <ItemText content={contentText} />
     </div>
   )
 }

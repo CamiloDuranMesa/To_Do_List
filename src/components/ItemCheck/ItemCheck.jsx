@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const ItemCheck = ({styles}) => {
+export const ItemCheck = ({ styles = '' }) => {
   return (
-    <input type="checkbox" name="" id="" className={styles}/>
+    <input type="checkbox" className={`mr-4 ${styles}`} />
   )
 }

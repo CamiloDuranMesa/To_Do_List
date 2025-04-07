@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const ItemTitle = ({content, styles}) => {
+export const ItemTitle = ({ content = '', styles = '' }) => {
   return (
-    <h1 className="text-black">{content}</h1>
+    <h3 className={`text-xl font-semibold text-black ${styles}`}>
+      {content}
+    </h3>
   )
 }
